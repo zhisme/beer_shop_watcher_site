@@ -7,6 +7,12 @@
 # General application configuration
 use Mix.Config
 
+config :beer_shop_watcher_site, BeerShopWatcherSite.Products,
+  database: "beer_shop_watcher_site_products",
+  username: "root",
+  password: "",
+  hostname: "localhost"
+
 config :beer_shop_watcher_site,
   ecto_repos: [BeerShopWatcherSite.Repo]
 
